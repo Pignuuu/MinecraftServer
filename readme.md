@@ -1,7 +1,5 @@
 # Pignuuu
 
-This website mainly used as a landing page for my minecraft server.
-
 ---
 
 ## Authors
