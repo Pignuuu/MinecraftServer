@@ -10,6 +10,7 @@ This website mainly used as a landing page for my minecraft server.
 
 ## Acknowledgments
 * **Revi** - *Helped with some plugins & server specifications. [Github.com](https://github.com/foxy-1423)*
+* **Pixel Perfext** - *Made discord svg* [Flaticon.com](https://www.flaticon.com/authors/pixel-perfect)
 
 ## Minecraft Server (Software & Specs)
 
