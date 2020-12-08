@@ -37,5 +37,5 @@
   
 * **Todo list**
   * [X] Add 16GB ram
+  * [X] Make server website
   * [ ] Remove Graphics Card
-  * [ ] Make server website
