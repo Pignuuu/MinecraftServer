@@ -22,7 +22,7 @@
   * [Skript](https://dev.bukkit.org/projects/skript)
   * [SuperVanish](https://www.spigotmc.org/resources/supervanish-be-invisible.1331/)
   * [TaBTPS](https://www.spigotmc.org/resources/tabtps-1-8-8-1-16-show-tps-mspt-and-more-in-the-tab-menu.82528/)
-  * [UltimateAutoRestart - Spigot](https://www.spigotmc.org/resources/1-8-1-16-1k-users-ultimateautorestart-need-an-autorestart-plugin-grab-the-best-one-today.64414/)
+  * [UltimateAutoRestart](https://www.spigotmc.org/resources/1-8-1-16-1k-users-ultimateautorestart-need-an-autorestart-plugin-grab-the-best-one-today.64414/)
   * [WitherAC](https://www.spigotmc.org/resources/wither-anti-cheat-1-13-x-1-16-x-paper-tuinity-support-free-accurate-optimized-anti-cheat.68657/)
   
 * **Specifications**
