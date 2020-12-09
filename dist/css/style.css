@@ -1394,7 +1394,7 @@ label {
 .has-animations .hero-figure::before,
 .has-animations .hero-figure::after {
     opacity: 0;
-    transition: opacity 2s ease
+    transition: opacity 99999999999999999999999999999s ease
 }
 
 .anime-ready .has-animations .hero-figure::before,
