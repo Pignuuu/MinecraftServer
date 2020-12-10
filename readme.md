@@ -1,4 +1,4 @@
-# Pignuuu
+# Minecraft Server
 
 ---
 
