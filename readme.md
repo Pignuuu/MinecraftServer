@@ -43,4 +43,4 @@
 * **Todo list**
   * [X] Add 16GB ram
   * [X] Make server website
-  * [ ] Clone main server to backup server
+  * [X] Clone main server to backup server
