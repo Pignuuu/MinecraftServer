@@ -38,22 +38,44 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	<script type='text/javascript'>
-        // Check Server/Website Is Online Or Offline Via Pure JavaScript
-        // Shared On www.exeideas.com
-        var url = 'http://51.174.216.8:8126/images/block_world_flat.png';
-        var img = new Image();
-        img.src = url;
-        img.onload = function() {
-            document.getElementById("server-offline").style.display= 'none';
-        }
-        img.onerror = function() {
+	<script>
+		function isSiteOnline(url, callback) {
+			// try to load favicon
+			var timer = setTimeout(function () {
+				// timeout after 5 seconds
+				callback(false);
+			}, 5000)
+
+			var img = document.createElement("img");
+			img.onload = function () {
+				clearTimeout(timer);
+				callback(true);
+			}
+
+			img.onerror = function () {
+				clearTimeout(timer);
+				callback(false);
+			}
+
+			img.src = 'http://51.174.216.8:8126/images/block_world_flat.png';
+		}
+	</script>
+
+	<script>
+		isSiteOnline("http://51.174.216.8/", function (found) {
+			if (found) {
+			document.getElementById("server-offline").style.display= 'none';
+			}
+			else {
 			document.getElementById("server-online").style.display= 'none';
-        }
-        </script>
+			document.getElementById("server-offline").style.display= '';
+			document.getElementById("server-offline").style.color= 'red';
+			}
+		})
+	</script>
 
 
-	
+
 </head>
 
 <body>
@@ -81,7 +103,8 @@
 								<li class="has-dropdown">
 									<a>Downloads</a>
 									<ul class="dropdown">
-										<li><a href="https://drive.google.com/u/0/uc?export=download&confirm=ByqT&id=1iPdtaCWD4vk_HCEsSFRGuVkwmUS977gm" download="">Main server</a></li>
+										<li><a href="https://drive.google.com/u/0/uc?export=download&confirm=ByqT&id=1iPdtaCWD4vk_HCEsSFRGuVkwmUS977gm"
+												download="">Main server</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -102,7 +125,8 @@
 								<h1>Minecraft server hosting service</h1>
 								<h2>Minecraft server hosted by <a href="https://discord.com/users/283331663482585088"
 										target="_blank">Pignuuu</a></h2>
-										<h2>Server status: <span id="server-online" style="color: green;">online</span> <span id="server-offline" style="color: red;">offline</span> </h2>
+								<h2>Server status: <span id="server-online" style="color: green;">online</span> <span
+										id="server-offline" style="display: none;" style="color: red;">offline</span> </h2>
 								<p><a class="btn btn-primary btn-lg btn-demo" href="#fh5co-started"></i> Price</a> <a
 										href="#fh5co-features" class="btn btn-primary btn-lg btn-learn">Learn More</a>
 								</p>
