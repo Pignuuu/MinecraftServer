@@ -38,6 +38,22 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script type='text/javascript'>
+        // Check Server/Website Is Online Or Offline Via Pure JavaScript
+        // Shared On www.exeideas.com
+        var url = 'http://51.174.216.8:8126/images/block_world_flat.png';
+        var img = new Image();
+        img.src = url;
+        img.onload = function() {
+            document.getElementById("server-offline").style.display= 'none';
+        }
+        img.onerror = function() {
+			document.getElementById("server-online").style.display= 'none';
+        }
+        </script>
+
+
+	
 </head>
 
 <body>
@@ -59,7 +75,7 @@
 									<a>Map</a>
 									<ul class="dropdown">
 										<li><a href="https://server3x.xyz/fishtank">Fishtank</a></li>
-										<li><a href="https://server3x.xyz/valhalla">Valhalla</a></li>
+										<li><a href="https://server3x.xyz/valhalla"><s>Valhalla</s></a></li>
 									</ul>
 								</li>
 								<li class="has-dropdown">
@@ -86,6 +102,7 @@
 								<h1>Minecraft server hosting service</h1>
 								<h2>Minecraft server hosted by <a href="https://discord.com/users/283331663482585088"
 										target="_blank">Pignuuu</a></h2>
+										<h2>Server status: <span id="server-online" style="color: green;">online</span> <span id="server-offline" style="color: red;">offline</span> </h2>
 								<p><a class="btn btn-primary btn-lg btn-demo" href="#fh5co-started"></i> Price</a> <a
 										href="#fh5co-features" class="btn btn-primary btn-lg btn-learn">Learn More</a>
 								</p>
