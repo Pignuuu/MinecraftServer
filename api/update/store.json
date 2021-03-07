@@ -1,15 +1,15 @@
 {
 	"update": [
 		{
-			"title": "title",
-			"type": "bug fix/added feature/removed feature",
-			"description": "description",
+			"title": "Change log",
+			"type": "Added feature",
+			"description": "There is now a change log command. Wait you are using it right now?",
 			"date": "7/3/2021"
 		},
 		{
-			"oldtitle": "title",
-			"oldtype": "bug fix/added feature/removed feature",
-			"olddescription": "description",
+			"oldtitle": "Work on probability feature",
+			"oldtype": "Added feature",
+			"olddescription": "Probability feature to tell how likely a user is to be a bot is being worked on.",
 			"olddate": "7/3/2021"
 		}
 	]
